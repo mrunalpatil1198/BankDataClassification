@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>Loan Page</title>
+
+</head>
+<body>
+<form  action="/external/" method="post" onsubmit="/external/">
+    {% csrf_token %}
+    <h4>Gender</h4>
+    <input type="radio" name="gender" value="Male">Male<br>
+    <input type="radio" name="gender" value="Female">Female<br><br>
+    <h4>Marital Status</h4>
+    <input type="radio" name="status" value="Yes">Married<br>
+    <input type="radio" name="status" value="No">Unmarried<br><br>
+    <h4>Number of Dependents</h4>
+    <select name="dependents">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3+">3+</option>
+    </select><br><br>
+    <h4>Education</h4>
+    <input type="radio" name="education" value="Graduate">Graduate<br>
+    <input type="radio" name="education" value="Not Graduate">Not Graduate<br><br>
+    <h4>Is applicant self-employeed?</h4>
+    <input type="radio" name="selfemp" value="Yes">Yes<br>
+    <input type="radio" name="selfemp" value="No">No<br><br>
+    <h4>Enter the Applicant's Income</h4>
+    <input type="number" name="income" value="A_income"><br><br>
+    <h4>Enter the Co-Applicant's Income</h4>
+    <input type="number" name="c_income" value="C_income"><br><br>
+    <h4>Enter the Loan Amount</h4>
+    <input type="number" name="loan_amount" value="loan_amount"><br><br>
+    <h4>Enter the Loan Amount Term</h4>
+    <input type="number" name="loan_amount_term" value="loan_amount_term"><br><br>
+    <h4>Is any positive credit history available?</h4>
+    <input type="radio" name="credit_history" value="1">Yes<br>
+    <input type="radio" name="credit_history" value="0">No<br><br>
+    <h4>Applicant's Property area type</h4>
+    <select name="property_area">
+        <option value="Urban">Urban</option>
+        <option value="Semiurban">Semi-urban</option>
+        <option value="Rural">Rural</option>
+    </select><br><br>
+    <input type="submit" >
+
+
+</form>
+</body>
+</html>
