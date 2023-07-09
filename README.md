@@ -1,6 +1,6 @@
 # Bank Data Classification
 
-Bank Data Classification is a machine learning project that focuses on classifying bank data into three main categories: customer acquisition, customer retention, and loan prediction. The goal is to develop models that can accurately classify new bank data based on these three categories.
+Bank Data Classification is a machine learning project that focuses on classifies bank data for three features: customer acquisition, customer retention, and loan prediction. The goal is to develop models that can accurately classify new bank data.
 
 ## Features
 
